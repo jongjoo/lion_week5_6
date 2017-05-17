@@ -1,0 +1,21 @@
+
+
+<div class="container">
+    <h1> 자유게시판</h1>
+    <h3>(수정시 제목 클릭)</h2>
+    <%@view.each do |p|%>
+    <div class="container">
+        
+    <hr>
+    순번 : <%=p.id%><br>
+    제목 : <a href="/content/<%=p.id%>"><%=p.title%></a><Br>
+    내용 : <%=p.content%><br>
+    <hr>
+    
+    <hr>
+    </div>
+    <%end%>
+    
+    
+    <a href="/main"> 처음으로</a>
+</div>

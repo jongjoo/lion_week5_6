@@ -1,0 +1,20 @@
+<div class="container">
+<h1>로또게시판 </h1>
+
+    <div class="row">
+    <%  @lotto.each do |l| %>
+    
+    
+      <div class="col-xs-6 col-md-3" align="center">
+        
+        <%= image_tag(l.lotto)%>
+
+        </div>
+        
+
+    
+    <% end %>
+    </div>
+
+</div>
+<a href="/main">처음으로 </a>
